@@ -31,12 +31,12 @@ const App = () => {
   return (
     <div className="min-h-screen relative overflow-hidden">
       {/* Background Image with Overlay */ }
-      <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={ {
+      <div className="absolute inset-0 -z-10 bg-cover bg-center bg-no-repeat"
+        style={ {
         backgroundImage: `url('/weather-background.jpg')`
       } }>
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-900/40 via-purple-900/
-        30 to-indigo-900/40"></div>
-        <div className="absolute inset-0 bg-black-20"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-900/40 via-purple-900/30 to-indigo-900/40"></div>
+        <div className="absolute inset-0 bg-black/20"></div>
       </div>
       <div className="relative z-10 container mx-auto px-4 py-8 min-h-screen">
       <div className="max-w-7xl mx-auto">
